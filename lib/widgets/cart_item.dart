@@ -12,7 +12,7 @@ class CartItem extends StatelessWidget {
   CartItem(this.id, this.productId, this.price, this.quantity, this.title);
   @override
   Widget build(BuildContext context) {
-    final cart = Provider.of<Cart>(context, listen: false);
+    final cart = Provider.of<Cart>(context);
 
     return Dismissible(
       key: ValueKey(id),
